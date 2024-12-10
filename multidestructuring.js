@@ -29,3 +29,30 @@ console.log([`${firstname} lives in ${city1} on ${firststreet}`,`${secondname} l
 //console.log(together)
 
 /////////////////QUESTION 14/////////////////////
+
+
+const profile={
+  name:"Shubhra",
+  age:60,
+  address:{
+    city:"Banda",
+    zipcode:"230203"
+  }
+};
+const updates={
+  age:20,
+  address:{
+    zipcode:"210203",
+    country:"India"
+  }
+};
+const tom={...profile,...updates,address:{...profile.address,...updates.address}};
+console.log(tom)
+
+
+
+
+
+
+
+
